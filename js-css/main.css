@@ -1,0 +1,284 @@
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed'), local('img/roboto-condensed'), url(https://fonts.gstatic.com/s/robotocondensed/v17/ieVl2ZhZI2eCN5jzbjEETS9weq8-19a7DQk6YvNkeg.woff2) format('woff2');
+}
+
+body{background: #000;}
+	a{font-family: 'Roboto', sans-serif;}
+	.section0{
+		/*height: 4100px;*/
+		/*background: url("../img/intro.avi");*/
+	}
+	@font-face {
+	  font-family: ffff;
+	  src: url(../img/ActionManCyr.ttf);
+	}
+	video { 
+	    position: fixed;
+	    top: 50%;
+	    left: 50%;
+	    min-width: 100%;
+	    min-height: 100%;
+	    /*width: auto;
+	    height: 100%;*/
+	    z-index: -100;
+	    transform: translateX(-50%) translateY(-50%);
+	 background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+	  background-size: cover;
+	  transition: 1s opacity;
+	}
+.page0 .section1-1{display: none;}
+	/*#myVideo {
+	  position: fixed;
+	  right: 0;
+	  top: 0;
+	  min-width: 80%; 
+	  min-height: 80%;
+	}*/
+	.section1{
+		/*min-height: 600px;*/
+		/*background: url(img/bg1.jpg) 0px 50%/100%;*/
+		/*background: url(../img/bg1.jpg) 50%/400px no-repeat;*/
+		background: rgba(0, 0, 0, 0.7);
+		/*==*/
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.div1{
+		color:white;
+	}
+
+
+
+	.line{
+		
+		font-family: 'Roboto', sans-serif;
+		/*font-family: open sans;*/
+		/*font-family: 'Oswald', arial;*/
+		font-size: 16px;
+		font-weight: 600;
+		text-transform: uppercase;
+		padding: 15px 0px;
+		border-bottom: 1px solid whitesmoke;
+		padding: 20px 0px 15px;
+	}
+	.line1{
+		color:#CC1313;
+		border-bottom: 1px solid #CC1313;
+	}
+	.event-link{
+		color:#fff;
+	}
+	.btn {
+	    transition: All 0.40s ease;
+	    -webkit-transition: All 0.40s ease;
+	    -moz-transition: All 0.40s ease;
+	    -o-transition: All 0.40s ease;
+
+	}
+	
+	.btn {
+	    display: inline-block;
+	    margin-bottom: 0;
+	    text-align: center;
+	    vertical-align: middle;
+	    cursor: pointer;
+	    border: 1px solid transparent;
+	    white-space: nowrap;
+	    padding: 6px 12px;
+	    font-size: 14px;
+	    line-height: 1.42857143;
+	}
+
+	.btn_buy_ticket {
+	    background-color: #fff;
+	    color: #222222;
+	    text-align: center;
+	    border-radius: 0;
+	    margin-top: -5px;
+	}
+	
+	.btn_buy_ticket:hover{
+		text-decoration: none;
+		background-color:red;
+		color:white;
+	}
+.menu_preLinks{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+}
+.menu_Links a{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-right: 30px;
+    color: #000;
+    font-weight: 500;
+}
+.menu_Links a.active{
+	color:#CC1313;
+}
+.forLogo img{
+	padding: 20px;
+}
+/*=======*/
+.page0 .line{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.page0 .line a{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.page0 .btn{
+	background: #ffae00;
+}
+@media (max-width: 770px) { 
+	.page0 .line-event{border-bottom: none;}
+	.page0 .line-event > div{
+		margin-top:20px;
+		margin-bottom: 20px;
+	}
+ }
+
+/*=======*/
+.page1 .menu{
+	background: #fff;
+}
+.page1 .section1{
+	justify-content: space-around;
+}
+
+.page1 .line{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.page1 .line a{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*=======*/
+body.page2 {
+	background: #fff;
+}
+.page2 .section1{
+	background: rgba(255, 255, 255, 0.68);
+}
+.page2 .line{
+	font-family: 'Oswald', arial;
+	color: slategrey;
+	border: none;
+}
+.page2 .line1{
+	color: #c0c0c0;
+}
+.page2 video {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    min-width: 66.6%;
+    min-height: 100%;
+    width: 66.6%;
+    height: auto;
+    /* height: 100%; */
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(//demosthenes.info/assets/images/polina.jpg) no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+.forLogo{
+	text-align: center;
+}
+.forLogo img{
+	height: 90px;
+}
+.page2 .btn_buy_ticket{
+background: #ffae00;
+}
+.page2 .section1{
+	justify-content: space-around;
+}
+
+/*======*/
+body.page3{
+	background: #fff;
+}
+.page3 .section1{
+	background: transparent;
+}
+.page3 .section1 .div1{
+	padding-left: 30%;
+}
+.page3 .line>.col-xs-12{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.page3 .line>.col-xs-12 a{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.page3 .line{
+	border: none;
+}
+.page3 .btn_buy_ticket{
+background: #ffae00;
+margin-top: 0;
+}
+.page3 .btn_buy_ticket:hover{
+	background: #CC1313;
+	}
+/*======*/
+.page4 .menu{
+	background: #fff;
+}
+.page4 .item img{
+	height: 200px;
+}
+/*.page4 .item{
+	display: block!important;
+}*/
+/*.fancybox{
+	height: 200px;
+}*/
+/*.page4 .item img.gigante {
+    width: 200%;
+    height: 200%;
+ 	}*/
+.page4 h1{
+	font-size: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: roboto condensed;
+    margin-bottom: 0;
+}
+.page4 h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #cb1213;
+	margin-top: 0;
+}
+.imgFolder{
+	background-color:white;
+}
+figcaption{
+	padding: 25px 20px 28px;
+}
+.imgFolder img{
+	width: 100%;
+}
+.imgFolder h6{
+	font-size: 22px;
+	font-family: roboto condensed;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+.imgFolder p{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}

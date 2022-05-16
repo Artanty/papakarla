@@ -1,0 +1,190 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Купить билет на концерт Папа Карла</title>
+	<link rel="stylesheet" href="js-css/bootstrap.min1.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	  <link href="http://allfont.ru/allfont.css?fonts=roboto-condensed" rel="stylesheet" type="text/css" />
+
+	 <link href="http://allfont.ru/allfont.css?fonts=oswald-" rel="stylesheet" type="text/css" />
+
+
+	<link rel="stylesheet" href="js-css/main.css">
+
+
+
+	<link rel="stylesheet" href="libs/jquery.fancybox.css" type="text/css" media="screen" />
+
+
+</head>
+
+<body class="page4">
+	<!-- <section class="section0">
+		<video autoplay muted loop id="myVideo">
+		  <source src="img/intro.mp4" type="video/mp4">
+		</video>
+	</section> -->
+	<!-- <section class="section0">
+		<video autoplay muted loop id="myVideo">
+		  	<source src="img/intro6.webm" type="video/webm">
+		</video>
+	</section> -->
+	<section class="menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 forLogo">
+					<img src="img/logotype_papacarla_only-b.png" alt="">
+				</div>
+				<div class="col-md-6 menu_preLinks">
+					<div class="menu_links">
+
+						<a href="page1.html">Концерты</a>
+						<a href="page4.html" class="active">Фото</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<h1>Фото</h1>
+			<h2>С концертов</h2>
+		</div>
+
+	</section>
+	
+	<style>
+		.item {
+		  float: left;
+		}
+	</style>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="imgFolder">
+						<img src="img/imgs01/cover/glaston.jpg" alt="">
+						<figcaption>
+							<h6>Гластонбери (МСК)</h6>
+							<p>46 фото</p>
+						</figcaption>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="imgFolder">
+						<img src="img/imgs00/cover/micro01.jpg" alt="">
+						<figcaption>
+							<h6>Микрокомикон</h6>
+							<p>6 фото</p>
+						</figcaption>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="imgFolder">
+						<img src="img/imgs03/cover/zal01.jpg" alt="">
+						<figcaption>
+							<h6>Зал ожидания</h6>
+							<p>106 фото</p>
+						</figcaption>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="imgFolder">
+						<img src="img/imgs04/cover/tv01.jpg" alt="">
+						<figcaption>
+							<h6>Телеканал 78</h6>
+							<p>5 фото</p>
+						</figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+
+
+
+
+
+
+
+
+	<section>
+		<!-- Button to Open the Modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+		  Open modal
+		</button>
+
+		<!-- The Modal -->
+		<div class="modal" id="myModal">
+		  
+		        <div class="container" id="container01">
+		        	<!-- пример
+		        	<a class="item" href="img/imgs01/07.jpg" rel="group1"><img class="fancybox" src="img/imgs01/07.jpg"></a> -->
+		        	
+		        </div>
+		      
+		  
+		</div>
+	</section>
+	<script src="js-css/jquery-2.2.4.min.js"></script>
+
+	<script src="js-css/bootstrap.min1.js"></script>
+	<script type="text/javascript" src="libs/masonry.pkgd.min.js"></script>
+
+	<script>
+		// по показу можалки сформировать фотки в нашей
+		$('#myModal').on('shown.bs.modal', function (e) {
+		  getImagesFromFolder();
+		})
+	</script>
+	<script>
+	function getImagesFromFolder(){
+		var folder = "img/imgs01/";
+		$.ajax({
+		    url : folder,
+		    success: function (data) {
+		        $(data).find("a").attr("href", function (i, val) {
+		            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+		                $("#container01").append( "<div class='rr'><a class='item' href='"+ folder + val +"' rel='group1'><img src='"+ folder + val +"'></a></div>" );
+		            }
+		        });
+		    }
+		});
+	}
+	</script>
+	<script type="text/javascript">
+	//   $(document).ready(function(){ 
+	// 	$('#container').masonry({
+	// // указываем элемент-контейнер в котором расположены блоки для динамической верстки
+	// 	  itemSelector: '.rr',
+	// // указываем класс элемента являющегося блоком в нашей сетке
+	// 	  singleMode: false,
+	// // true - если у вас все блоки одинаковой ширины
+	// 	  isResizable: true,
+	// // перестраивает блоки при изменении размеров окна
+	// 	  isAnimated: true,
+	// // анимируем перестроение блоков
+	//           animationOptions: { 
+	// 	      queue: false, 
+	// 	      duration: 500 
+	// 	  }
+	// // опции анимации - очередь и продолжительность анимации
+	// 	}); 
+
+
+	//   });
+	</script>
+	<script type="text/javascript" src="libs/jquery.fancybox.pack.js"></script>
+	<script>
+
+		//Попап менеджер FancyBox
+			//Документация: https://fancybox.net/howto
+			//<a class="fancybox"><img src="image.jpg" /></a>
+			//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
+			$("a.item").fancybox();
+	</script>
+</body>
+</html>
